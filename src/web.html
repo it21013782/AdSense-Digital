@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="images/adsenseicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Solution</title>
+    <link rel="stylesheet" href="styles/webStyles.css">
+    <script type="text/javascript" src="js/websolution.js"></script>
+</head>
+<body>
+	<!-- Header -->
+	<div class="header" id="myHeader">
+		<img src = "images/logo.png" alt = "logo" style="width:250px; padding-top:10px; padding-bottom:100px;">
+		<span style="font-size:30px;cursor:pointer;float:right; padding: 20px;" onclick="openNav()">&#9776;</span>
+	</div>	
+	
+	<!--nav bar-->
+	<div id="mySidenav" class="sidenav" style="text-align: center">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		  <div class="fcolumn">
+			<img src = "images/logo.png" alt = "logo" style="width:250px; padding-top:20%">
+		  </div>
+
+		  <div class="fcolumn">
+			<a href="../src/index.html">Home</a>
+			<a href="../src/company.htm">About Us</a>
+			<a href="../src/index.html#services">Services</a>
+			<a href="../src/index.html#projects">Projects</a>
+			<a href="../src/index.html#insights">Insights</a>
+			<a href="../src/contact.html">Contact</a>
+			<a href="../src/career.htm">Careers</a>
+		  </div>
+
+		  <div class="fcolumn">
+		  <form action="login.php">
+			<h2>Sign in</h2>
+			<br><br>
+			<input type="textt" name="Login" placeholder="Enter email" alt="Search" required>
+			<br><br>
+			<input type="passwordd" name="password" placeholder="Enter Password" alt="Search" required>
+			<br><br>
+			<button class="subscribebtn" style="vertical-align:middle"><span>Log in</span></button>
+			</br></br>or</br>
+			<button class="subscribebtn" style="vertical-align:middle; background-color: transparent"><a href="../src/registration.html" style="color:white; font-size:15px; padding-left:5px;"> <span>Register</span></a></button>
+		  </form>
+		  </div>
+	</div>
+	</br></br>
+   <div class="row">
+       <!--First paragraph-->
+       <div class="first">
+           <h1>Web Solution</h1>
+		   </br></br></br>
+           <h2>Intelligently Crafted Designs <br>That Resonate</h2></br>
+           <p>
+            An intelligent approach that<br>
+            combines user interaction, device<br>
+            compatibility, and the right mix of<br>
+            platforms to drive engagement,<br>
+            performance, and change.<br>
+            Customized design for your brand,<br>
+            lovingly designed<br>
+           </p>
+       </div>
+       <!--/First paragraph-->
+       <div class="image1">
+           <img src="images/img1.jpg" alt="" class="img1">
+           <br>
+       </div>
+   </div> 
+<br>
+<br>
+<center>
+<div id="approach">
+   <h2>Our approach to unique web design based on performance</h2></br>
+<p style="font-size: 18px;">
+    For us, templates are a thing of the past. Our unique component-based<br>
+    architectural approach enables us to create dynamic websites that can<br>
+    be changed on the fly based on user travels and contact data. We guar<br>
+    antee a unique web design every time, specifically designed for your<br>
+    brand and analyzing your potential customers, competitors, and industry.<br>
+    The performance will always be at the heart of our web design strategy<br>
+    and we make sure your website is optimized for multiple devices, faster<br>
+    downloads, and search engines as it is on a 4k desktop with a 4-inch screen.<br>
+    Whether you like a simple online brochure or plan to dominate your market<br>
+     with a great e-commerce site, we are the web development company for you.<br>
+</p>
+</div>
+</center>  
+</br>
+  <center>
+<section class="home">
+  
+    <div class="container">
+        
+       <div class="row">
+        
+           <div class="home-text">
+            <h1 >Our Approach</h1>
+                <br>
+                <p class="animate-text">
+                   <span>Strategy</span>
+                   <span>Information Architecture</span>
+                   <span>Website Design</span>
+                   <span>Development</span>
+                   <span>QA and Testing</span>
+                   <span>Launch</span>
+                </p>
+           </div>
+       </div>
+    </div>
+</section>
+</center>
+
+
+
+<script>
+        const txts=document.querySelector(".animate-text").children,
+              txtsLen=txts.length;
+          let index=0;
+         const textInTimer=3000,
+               textOutTimer=2800;
+
+        function animateText() {
+           for(let i=0; i<txtsLen; i++){
+             txts[i].classList.remove("text-in","text-out");  
+           }
+           txts[index].classList.add("text-in");
+
+           setTimeout(function(){
+               txts[index].classList.add("text-out");              
+           },textOutTimer)
+
+           setTimeout(function(){
+
+             if(index == txtsLen-1){
+                 index=0;
+               }
+              else{
+                  index++;
+                }
+               animateText();
+           },textInTimer); 
+        }
+        
+        window.onload=animateText;
+		
+/* js for the header was referenced by "www.w3schools.com" */
+/* header */
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
+<br>
+<div>
+    <img class="img3" src="images/img3.jpg">
+</div>
+<br>
+</br>
+<center>
+<h1>Recent works</h1>
+<br>
+<div class="imgrecent">
+    <div class="fcolumn">
+        
+        <a href="https://www.olankatravels.com/"><img src="images/img4.jpg" alt="" id="img4"></a>
+    <div class="text1"><a href="https://www.olankatravels.com/"><span>Olanka travels<br>Travel & Hospitality</span></a></div>
+    
+    </div>
+    <div class="fcolumn">
+        
+        <a href="https://unionassurance.com/"><img src="images/img5.jpg" alt="" id="img5"></a>
+    <div class="text2"><a href="https://unionassurance.com/"><span>Union Insurence<br> E-Commerce and Retail</span></a></div>
+    
+    </div>
+
+    <div class="fcolumn">
+        
+        <a href="https://www.rettech.net/"><img src="images/img6.jpg" alt="" id="img6"></a>
+    <div class="text3"><a href="https://www.rettech.net/"><span>Ret Tech<br>Technology</span></a></div>
+    
+    </div>
+</div>
+</center>
+<br>
+<br>
+<!--Form-->
+<div class="wrapper">
+    <div class="title">
+        CONTACT FOR<br>
+        QUICK CUSTOM QUOTE
+    </div>
+    <form class="form" method="post" action="formsweb.php">
+       <div class="inputfield">
+          <label>Name</label>
+          <input type="text" name="name"  class="input">
+       </div>  
+        <div class="inputfield">
+          <label>Phone</label>
+          <input type="text" name="phone" class="input">
+       </div>  
+       <div class="inputfield">
+          <label>Email</label>
+          <input type="Email" name="emailid" class="input">
+       </div>  
+      <div class="inputfield">
+          <label>Brand Name</label>
+          <input type="text" name="bname" class="input">
+       </div> 
+        <div class="inputfield">
+          <label>Select consultancy</label>
+          <div class="custom_select">
+            <select name="ctype">
+                <option value="">Select</option>
+                <option value="digitaltransformation">digital Transformation</option>
+                <option value="searchengineoptimization">Search Engine Optimization</option>
+                <option value="socialmediaadvertising">socialmediaadvertising</option>
+                <option value="socialmediamanagement">Social media Management</option>
+                <option value="conversionrateoptimization">Conversion rate optimization</option>
+                <option value="PayPerClickMarketing">Pay -Per-Click Marketing</option>
+                <option value="influencermarketing">Influencer Marketing</option>
+                <option value="emailmarketing">Email Marketing</option>
+            </select>
+          </div>
+       </div> 
+        
+       
+      
+       
+      
+      <div class="inputfield">
+        <input type="submit" value="submit" class="btn">
+      </div>
+    </form>
+</div>
+<!--/Form-->
+
+	<!-- footer -->
+
+	<footer>
+	
+	<hr style="width:100%;text-align:center;">  
+ 
+    <div class="fcolumn" style="top: 50%; text-align: center"><h4>Subscribe to our newsletter</h4></div>
+
+    <div class="fcolumn" style="width: 64%; top: 50%; float:right">
+       <form action="newsletter.php" style="padding: 10px">
+         <input type="text" style="width:300px; padding: 10px; border-radius: 50px" placeholder="Enter your email..." name="email" required> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		 <button class="subscribebtn" style="border-radius: 50px;"><span>SUBMIT</span></button>
+       </form>
+    </div>
+	</br>
+	<hr style="width:100%;text-align:center;">
+	</br></br>
+
+	  <center>
+	  <img src = "images/logo.png" alt = "logo" style="width:200px; padding-top:10px;">
+	  </br></br>
+	  <a href="../src/index.html#services">SERVICES</a> &emsp;
+	  <a href="../src/index.html#projects">PROJECTS</a> &emsp;
+	  <a href="../src/index.html#insights">INSIGHTS</a> &emsp;
+	  <a href="../src/company.htm">COMPANY</a> &emsp;
+	  <a href="../src/career.htm">CAREERS</a> &emsp;
+	  <a href="../src/contact.html">CONTACT</a>
+	  </center>
+	  </br></br></br></br>
+
+	  <div class="fcolumn">
+		  <h3>CONTACT</h3>
+		  </br><p3>
+		  <a href="mailto:info@adsensedigital.com">info@adsensedigital.com</a>
+		  </br>Tel: +94 11 235 5678</br>
+		  </br>No. 9,</br>1st Lane,</br>Colombo, Sri Lanka</br>
+		  </br></br></br></br>
+		  </br>&copy; 2021 AdSense Digital. All Rights Reserved.</p3>
+	  </div>
+	  
+	  <div class="fcolumn">
+		<h3>FIND US ON</h3></br>
+		<a href="https://facebook.com/" target="_blank"><img src="images/fbicon.png" style="width:40px"></a> &emsp;
+		<a href="https://www.instagram.com/" target="_blank"><img src="images/igicon.png" style="width:40px"></a> &emsp;
+		<a href="https://twitter.com/?lang=en" target="_blank"><img src="images/twittericon.png" style="width:40px"></a> &emsp;
+		<a href="https://www.youtube.com/" target="_blank"><img src="images/youtubeicon.png" style="width:40px"></a> &emsp;
+		<a href="https://www.pinterest.com/" target="_blank"><img src="images/pinteresticon.png" style="width:40px"></a>
+	  </div>
+	  
+	  <div class="fcolumn">
+		<h3>POLICIES</h3>
+		</br><p3>
+		<a href="#">Privacy Policy</a> &emsp;
+		<a href="#">Disclaimer</a> &emsp;
+		<a href="#">Terms & Conditions</a>
+		</br></br></br></br></br></br></br></br></br></br>
+		</br>Designed & Developed in Sri Lanka.</br>
+		</p3>		
+	  </div>
+	</footer>
+
+</body>
+</html>

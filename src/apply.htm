@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Apply Now</title>
+	<link rel="icon" href="images/adsenseicon.png">
+
+	<style>
+
+	body {
+		background: #0b0a12;
+		margin: 0;
+		padding: 0;
+		font-family: 'neue-haas-unica',sans-serif;
+		color: white;
+	}
+		
+	.app-heading {
+		width: 1000px;
+		background-color: #16191c;
+		font-family: 'neue-haas-unica',sans-serif;
+		margin: auto;
+		color: #6260d6;
+		padding: 10px 0px 10px 0px;
+		text-align: center;
+		border-radius: 15px 15px 0px 0px;
+		text-transform: uppercase;
+		font-size: 10px;
+		margin-top: 50px;
+	}
+
+	.app-form {
+		background-color: #16191c;
+		font-family: 'neue-haas-unica',sans-serif;
+		width: 1000px;
+		margin: auto;
+		border-radius: 0px 0px 15px 15px;
+		text-transform: uppercase;
+		margin-bottom: 100px;
+	}
+
+	form {
+		padding: 10px;
+
+	}
+
+	#name {
+		width: 100%;
+		height: 100px;
+	}
+
+	.name {
+		margin-left: 25px;
+		margin-top: 30px;
+		width: 125px;
+		color: #6260d6;
+		font-size: 18px;
+		font-weight: 700px;
+		font-size: 15px;
+	}
+
+	.fname {
+		position: relative;
+		left: 200px;
+		top: -37px;
+		line-height: 40px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+	}
+
+	.lname {
+		position: relative;
+		left: 550px;
+		top: -80px;
+		line-height: 40px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+	} 
+
+	.firstlabel {
+		position: relative;
+		color: #E5E5E5;
+		text-transform: capitalize;
+		font-size: 14px;
+		left: 270px;
+		top: 0px;
+	}
+
+	.lastlabel {
+		position: relative;
+		color: #E5E5E5;
+		text-transform: capitalize;
+		font-size: 14px;
+		left: 620px;
+		top: -40px;
+	}
+
+	.email,.number,.location {
+		position: relative;
+		left: 270px;
+		top: -37px;
+		line-height: 40px;
+		width: 543px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+	}
+
+	.option {
+		position: relative;
+		left: 270px;
+		top: -37px;
+		line-height: 40px;
+		width: 593px;
+		height: 30px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+		outline: none;
+		overflow: hidden;
+	}
+
+	.option option{
+		font-size: 15px;
+	}
+
+	#student {
+		margin-left: 25px;
+		color: #6260d6;
+		font-size: 16px;
+	}
+
+	.radio {
+		display: inline-block;
+		padding-right: 70px;
+		font-size: 16px;
+		margin-left: 270px;
+		margin-top: 15px;
+		color: white;
+	}
+
+	.radio input{
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		cursor: pointer;
+		outline: none;
+	}
+
+	.txtarea {
+		position: relative;
+		left: 270px;
+		top: -37px;
+		line-height: 40px;
+		width: 550px;
+		height: 50px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+		outline: none;
+		overflow: hidden;
+	}
+
+	.file {
+		position: relative;
+		left: 250px;
+		top: -50px;
+		line-height: 40px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+	}
+
+	.submit {
+		position: relative;
+		left: 250px;
+		top: -20px;
+		line-height: 40px;
+		border-radius: 6px;
+		padding: 0 22px;
+		font-size: 16px;
+		color: #555;
+	}	
+
+	.work-btn {
+		position: relative;
+		align-items: center;
+		text-align: center;
+		border-radius: 4px;
+		background-color: #23324a;
+		border: none;
+		color: #eee;
+		text-align: center;
+		font-size: 16px;
+		padding: 15px;
+		width: 200px;
+		transition: all 0.5s;
+		cursor: pointer;
+		margin-top: 50px;
+		margin-bottom: 40px;
+		margin-left: 390px;
+		}
+
+	.work-btn span {
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;
+		background: #23324a;
+		}
+
+	.work-btn span:after {
+		content: '\00bb';
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		right: -20px;
+		transition: 0.5s;
+	}
+
+	.work-btn:hover span {
+		padding-right: 25px;
+		background: #878894;
+		color: #333;
+	}
+
+	.work-btn:hover{
+		background: #878894;
+	}
+
+	.work-btn:hover span:after {
+		opacity: 1;
+		right: 0;
+	}
+
+	footer {
+	padding: 50px;
+	}
+
+	h3 {
+		font-size: 20px;
+		
+	}
+
+	.fcolumn {
+		float: left;
+		width: 33%;
+		/*padding: 10px;*/
+		position: relative;
+	}
+
+	p3 {
+		font-size:15px;
+	}
+
+	a:link {
+	  text-decoration: none;
+	  color: grey;
+	}
+
+	a:visited {
+	  text-decoration: none;
+	  color: grey;
+	}
+
+	a:hover {
+	  text-decoration: none;
+	  color: white;
+	}
+
+	a:active {
+	  text-decoration: none;
+	  color: white;  
+	}
+
+	/* The side navigation menu */
+	.navbar {
+		float: right;
+		font-size:30px;
+		cursor:pointer;
+		margin-right: 10px;
+	}
+
+	.sidenav {
+	  height: 100%; /* 100% Full-height */
+	  width: 0; /* 0 width - change this with JavaScript */
+	  position: fixed; /* Stay in place */
+	  z-index: 10; /* Stay on top */
+	  top: 0; /* Stay at the top */
+	  right: 0;
+	  background-color: #111; /* Black*/
+	  overflow-x: hidden; /* Disable horizontal scroll */
+	  padding-top: 60px; /* Place content 60px from the top */
+	  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	  opacity: 0.9;
+	}
+
+	/* The navigation menu links */
+	.sidenav a {
+	  padding: 8px 8px 8px 32px;
+	  text-decoration: none;
+	  font-size: 40px;
+	  text-align: center;
+	  color: #818181;
+	  display: block;
+	  transition: 0.3s;
+	}
+
+	/* When you mouse over the navigation links, change their color */
+	.sidenav a:hover {
+	  color: #f1f1f1;
+	}
+
+	/* Position and style the close button (top right corner) */
+	.sidenav .closebtn {
+	  position: absolute;
+	  top: 0;
+	  right: 25px;
+	  font-size: 36px;
+	  margin-left: 50px;
+	}
+
+	/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+	#main {
+	  transition: margin-left .5s;
+	  padding: 20px;
+	}
+
+	/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+	@media screen and (max-height: 450px) {
+	  .sidenav {padding-top: 15px;}
+	  .sidenav a {font-size: 18px;}
+	}
+
+	/* Style the header */
+	.header {
+	  /*padding: 20px;*/ 
+	  height: 100px;
+	  background: rgba(0, 0, 0, 0);
+	  color: white;
+	  margin: 0;
+	  z-index:10;
+	}
+
+	/* The sticky class is added to the header with JS when it reaches its scroll position */
+	.sticky {
+	  position: fixed;
+	  top: 0;
+	  width: 100%
+	}
+
+	/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+	.sticky + .content {
+	  padding-top: 100px;
+	}
+	
+	input[type=textt], [type=passwordd] {
+		background-color: lightgrey;
+		color: white;
+		width: 234px;
+		height: 25px;
+		border-radius: 4px;
+		border-width: 10;
+	}
+
+	/* button */
+
+	.subscribebtn {
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		background-color: #008CBA;
+	}
+
+	.subscribebtn span {
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		transition: 0.5s;
+	}
+
+	.subscribebtn span:after {
+		content: '\00bb';
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		right: -20px;
+		transition: 0.5s;
+	}
+
+	.subscribebtn:hover span {
+		padding-right: 25px;
+	}
+
+	.subscribebtn:hover span:after {
+		opacity: 1;
+		right: 0;
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<!-- Header -->
+	<div class="header" id="myHeader">
+		<img src = "images/logo.png" alt = "logo" style="width:250px; padding-top:10px; padding-bottom:100px;">
+		<span style="font-size:30px;cursor:pointer;float:right; padding: 20px;" onclick="openNav()">&#9776;</span>
+	</div>	
+	
+	<!--nav bar-->
+	<div id="mySidenav" class="sidenav" style="text-align: center">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		  <div class="fcolumn">
+			<img src = "images/logo.png" alt = "logo" style="width:250px; padding-top:20%">
+		  </div>
+
+		  <div class="fcolumn">
+			<a href="../src/index.html">Home</a>
+			<a href="../src/company.htm">About Us</a>
+			<a href="../src/index.html#services">Services</a>
+			<a href="../src/index.html#projects">Projects</a>
+			<a href="../src/index.html#insights">Insights</a>
+			<a href="../src/contact.html">Contact</a>
+			<a href="../src/career.htm">Careers</a>
+		  </div>
+
+		  <div class="fcolumn">
+		  <form action="login.php">
+			<h2>Sign in</h2>
+			<br><br>
+			<input type="textt" name="Login" placeholder="Enter email" alt="Search" required>
+			<br><br>
+			<input type="passwordd" name="password" placeholder="Enter Password" alt="Search" required>
+			<br><br>
+			<button class="subscribebtn" style="vertical-align:middle"><span>Log in</span></button>
+			</form></br>or</br>
+			<button class="subscribebtn" style="vertical-align:middle; background-color: transparent"><a href="../src/registration.html" style="color:white; font-size:15px; padding-left:5px;"> <span>Register</span></a></button>
+		  </div>
+	</div>
+	</br>
+
+	<div class="app-heading"><h1>Application</h1></div>
+	<div class="app-form">
+
+		<form method="post" action="adsenseApp.php" enctype="multipart/form-data">
+
+			<div id="name">
+				<h2 class="name">Name</h2> 
+				<label class="firstlabel">First Name</label>
+				<input class="fname" type="text" name="fname" placeholder="First name"><br>
+				<label class="lastlabel">Last Name</label>
+				<input class="lname" type="text" name="lname" placeholder="last Name">
+			</div>
+
+			<h2 class="name">Email</h2> 
+			<input class="email" type="email" name="email" placeholder="Email"><br>
+
+			<h2 class="name">Phone</h2> 
+			<input class="number" type="text" pattern="[0-9]{10}" name="phone" placeholder="Telephone Number"><br>
+
+			<h2 class="name">Location (City)</h2>
+			<input class="location" type="text" name="location" placeholder="Your Location"><br>
+
+			<h2 class="name">Position</h2>
+			<select class="option" name="position">
+				<option disabled="disabled" selected="selected"> -- choose Position -- </option>
+				<option value="subject1">Creator Strategist</option>
+				<option value="subject2">Advertising Specialist</option>
+				<option value="subject3">Advertising Manager</option>
+				<option value="subject3">Brand Manager</option>
+				<option value="subject3">Regional Director</option>
+				<option value="subject3">Marketing Assistant</option>
+			</select><br>
+
+			<h2 id="student">Are you beginner ?</h2>
+			<label class="radio">
+				<input class="radio-one" type="radio" checked="checked" name="beginner">
+				<span class="checkmark"></span>
+				Yes
+			</label>
+			<label class="radio">
+				<input class="radio-one" type="radio" name="beginner">
+				<span class="checkmark"></span>
+				No
+			</label><br>
+
+			<h2 class="name">How did you<br>hear about this job?</h2>
+			<textarea class="txtarea" name="message" id="" cols="30" rows="10" placeholder="Message"></textarea><br>
+
+			<h2 class="name">Resume/CV</h2>
+			<input class="file" type="file" name="adsenseCV" id="fileToUpload">
+
+			<div class="sb-button">
+				<button class="work-btn" type="submit"><span>Submit</span></button>
+			</div>
+		</form>
+	</div>
+
+	<!-- footer -->
+
+	<footer>
+	
+	<hr style="width:100%;text-align:center;">  
+  
+    <div class="fcolumn" style="top: 50%; text-align: center"><h4>Subscribe to our newsletter</h4></div>
+
+    <div class="fcolumn" style="width: 64%; top: 50%; float:right">
+       <form action="newsletter.php">
+         <input type="text" style="width:300px; border-radius: 50px; height: 30px; padding:10px" placeholder="Enter your email..." name="email" required> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		 <button class="subscribebtn" style="border-radius: 50px;"><span>SUBMIT</span></button>
+       </form>
+    </div>
+	
+	<hr style="width:100%;text-align:center;">
+	</br></br>
+
+	  <center>
+	  <img src = "images/logo.png" alt = "logo" style="width:200px; padding-top:10px;">
+	  </br></br>
+	  <a href="../src/index.html#services">SERVICES</a> &emsp;
+	  <a href="../src/index.html#projects">PROJECTS</a> &emsp;
+	  <a href="../src/index.html#insights">INSIGHTS</a> &emsp;
+	  <a href="../src/company.htm">COMPANY</a> &emsp;
+	  <a href="../src/career.htm">CAREERS</a> &emsp;
+	  <a href="../src/contact.html">CONTACT</a>
+	  </center>
+	  </br></br></br></br>
+
+	  <div class="fcolumn">
+		  <h3>CONTACT</h3>
+		  </br><p3>
+		  <a href="mailto:info@adsensedigital.com">info@adsensedigital.com</a>
+		  </br>Tel: +94 11 235 5678</br>
+		  </br>No. 9,</br>1st Lane,</br>Colombo, Sri Lanka</br>
+		  </br></br></br></br>
+		  </br>&copy; 2021 AdSense Digital. All Rights Reserved.</p3>
+	  </div>
+	  
+	  <div class="fcolumn">
+		<h3>FIND US ON</h3></br>
+		<a href="https://facebook.com/" target="_blank"><img src="images/fbicon.png" style="width:40px"></a> &emsp;
+		<a href="https://www.instagram.com/" target="_blank"><img src="images/igicon.png" style="width:40px"></a> &emsp;
+		<a href="https://twitter.com/?lang=en" target="_blank"><img src="images/twittericon.png" style="width:40px"></a> &emsp;
+		<a href="https://www.youtube.com/" target="_blank"><img src="images/youtubeicon.png" style="width:40px"></a> &emsp;
+		<a href="https://www.pinterest.com/" target="_blank"><img src="images/pinteresticon.png" style="width:40px"></a>
+	  </div>
+	  
+	  <div class="fcolumn">
+		<h3>POLICIES</h3>
+		</br><p3>
+		<a href="#">Privacy Policy</a> &emsp;
+		<a href="#">Disclaimer</a> &emsp;
+		<a href="#">Terms & Conditions</a>
+		</br></br></br></br></br></br></br></br></br></br>
+		</br>Designed & Developed in Sri Lanka.</br>
+		</p3>		
+	  </div>
+	</footer>
+
+	<script>
+	
+		
+		/* js for the slideshow was referenced by "www.w3schools.com" */
+		/* header */
+
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+		    header.classList.add("sticky");
+		  } else {
+		    header.classList.remove("sticky");
+		  }
+		}
+
+		/* Set the width of the side navigation to 250px */
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "100%";
+		}
+
+		/* Set the width of the side navigation to 0 */
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		}
+
+	</script>
+	
+</body>
+</html>
