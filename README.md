@@ -7,7 +7,7 @@ AdSense Digital has a website where it mainly interacts with the clients making 
 ## Contributors
 
 - Dissanayake D.M.D.B.
-- Amarasekara H.P.D.E.R
+- Amarasekara H.P.D.E.R.
 - Dissanayake A.L. 
 - Shifan M.R.M.
 
